@@ -1,0 +1,63 @@
+
+/*   NAV STYLES  MIBILE FIRST */
+
+nav {
+    font-size: small;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'dosis';
+    background-color: #42414c42;
+    backdrop-filter: blur(20px);
+  }
+  
+  nav .title {
+    margin-right: auto;
+    align-self: flex-start;
+    display: flex;
+  }
+  .nav-logo {
+    width: 20px;
+    margin: 0px 5px;
+    align-self: center;
+  }
+  nav .title-label{
+    align-self: center;
+  }
+  nav details {
+    right: 10px;
+    top: 10px;
+    z-index: 5;
+  }
+  nav details ul {
+    list-style: none;
+    margin-right: 20px;
+  }
+
+/* NAV TABLET STYLES */
+
+@media only screen and (min-width: 650px ) {
+    nav {
+      font-size: medium;
+      padding: 6px;
+    }
+    .nav-logo {
+      width: 25px;
+      margin: 0px 6px;
+    }  
+}
+
+@media only screen and (min-width: 950px ) {
+    nav {
+      font-size: medium;
+      padding: 8px;
+      align-self: start;
+      width: 100%;
+    }
+    .nav-logo {
+      width: 35px;
+      margin: 0px 10px;
+    }
+}

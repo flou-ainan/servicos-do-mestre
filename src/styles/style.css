@@ -82,7 +82,7 @@ nav details ul {
 
 .hero {
   width: 100%;
-  background-image: url('/public/logos-background-mobile.jpg');
+  /* background-image: url('/public/logos-background-mobile.jpg'); */
   background-repeat: no-repeat;
   background-color: black;
   background-position-y: top;
@@ -211,7 +211,7 @@ p {
     margin: 0px 6px;
   }  
   .hero {
-    background-image: url("/public/logos-background-tablet.jpg");
+    background-image: url("/images/logos-background-tablet.jpg");
   }
   .hero-content {
     flex-direction: row;
@@ -262,7 +262,7 @@ p {
     margin: 0px 10px;
   }
   .hero {
-    background-image: url("/public/logos-background-desk.jpg");
+    background-image: url("/images/logos-background-desk.jpg");
     align-items: center;
   }
   .hero-content {

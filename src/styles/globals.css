@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/*
+@       -- AVAILABLE FONTS -- 
+
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Mohave', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Young Serif', serif; 
+*/
+
+
 *{
   box-sizing: border-box;
 }
@@ -14,9 +28,15 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  place-items: center center;
+  /* justify-content: center;
+  place-items: center center; */
   min-width: 320px;
   min-height: 100vh;
   font-size: larger;
+}
+
+
+.shadow-text {
+  color: #fff;
+  text-shadow: 2px 2px 6px #000000e1
 }

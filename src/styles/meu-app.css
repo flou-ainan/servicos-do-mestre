@@ -1,0 +1,23 @@
+.meu-app {
+    color: #ffffff;
+    font-family: "Quicksand";
+    background-color: #42414C;
+    /* background-color: #fff; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-size: larger;
+  }
+
+.meu-app h1 {
+  font-size: 20pt;
+}
+
+.meu-app a {
+  font-family: 'bebas neue';
+  color: orange;
+}
