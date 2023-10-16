@@ -15,6 +15,9 @@ font-family: 'Rubik', sans-serif;
 font-family: 'Young Serif', serif; 
 */
 
+html {
+  scroll-behavior: smooth;
+}
 
 *{
   box-sizing: border-box;
@@ -39,4 +42,15 @@ font-family: 'Young Serif', serif;
 .shadow-text {
   color: #fff;
   text-shadow: 2px 2px 6px #000000e1
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  text-align: center;
+  font-size: 25pt;
 }

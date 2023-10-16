@@ -5,15 +5,15 @@ export default function Nav() {
                 <img src="favicon.png" className="nav-logo" />
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
             </div>
-            <h1>Meu app {'  '}<a href='meu-app'>{'➡️'}</a></h1>
-            {/* <details>
+            <details>
                 <summary>Mais</summary>
                 <ul>
                     <li>Serviços</li>
                     <li>Sobre</li>
                     <li>Blog</li>
+                    <li><span>Meu app {'  '}<a href='meu-app'>{'➡️'}</a></span></li>
                 </ul>
-            </details> */}
+            </details>
         </nav>
     )
 }

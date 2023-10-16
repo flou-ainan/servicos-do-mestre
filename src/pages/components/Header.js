@@ -6,7 +6,7 @@ export default function Header() {
             <Nav />
             <div class="hero-content">
                 <Herofirst />
-                <Herofsecond />
+                <Herosecond />
             </div >
         </header>
     )
@@ -14,19 +14,19 @@ export default function Header() {
 
 
 const Herofirst = () =>
-    <div class="hero-first shadow-text">
+    <div className="hero-first shadow-text">
         <h1>
-            <span id="header-text" class="shadow-text">O Melhor do Digital</span><span id="header-text-bar" class="blinker bar">|</span>
+            <span id="header-text" className="shadow-text">O Melhor do Digital</span><span id="header-text-bar" className="blinker bar">|</span>
         </h1>
         <p id="header-subtitle">
-            <span id="subtitle-text-01">Feito sob medida para você</span><span id="subtitle-text-01-bar" class="blinker bar">|</span>
-            <br /><br /><b><span id="subtitle-text-02" class="bold">do seu jeito</span></b><span id="subtitle-text-02-bar" class="blinker bar">|</span>
+            <span id="subtitle-text-01">Feito sob medida para você</span><span id="subtitle-text-01-bar" className="blinker bar">|</span>
+            <br /><br /><b><span id="subtitle-text-02" className="bold">do seu jeito</span></b><span id="subtitle-text-02-bar" class="blinker bar">|</span>
         </p>
     </div>
 
-const Herofsecond = () =>
-    <div class="hero-second">
-        <img src="/images/banner-test.png" class="banner" />
+const Herosecond = () =>
+    <div className="hero-second">
+        <img src="/images/banner-test.png" className="banner" />
         <br />
-        <a href="#services" class="typer-cta">CONTRATAR AGORA</a>
+        <a href="#services" className="typer-cta">CONTRATAR AGORA</a>
     </div>
