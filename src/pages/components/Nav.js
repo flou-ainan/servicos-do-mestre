@@ -1,7 +1,7 @@
 export default function Nav() {
     return(
         <nav >
-            <div class="title">
+            <div className="title">
                 <img src="favicon.png" className="nav-logo" />
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
             </div>

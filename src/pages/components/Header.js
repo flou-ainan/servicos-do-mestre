@@ -2,9 +2,9 @@ import Nav from "./Nav";
 
 export default function Header() {
     return (
-        <header class="hero">
+        <header className="hero">
             <Nav />
-            <div class="hero-content">
+            <div className="hero-content">
                 <Herofirst />
                 <Herosecond />
             </div >
@@ -20,7 +20,7 @@ const Herofirst = () =>
         </h1>
         <p id="header-subtitle">
             <span id="subtitle-text-01">Feito sob medida para você</span><span id="subtitle-text-01-bar" className="blinker bar">|</span>
-            <br /><br /><b><span id="subtitle-text-02" className="bold">do seu jeito</span></b><span id="subtitle-text-02-bar" class="blinker bar">|</span>
+            <br /><br /><b><span id="subtitle-text-02" className="bold">do seu jeito</span></b><span id="subtitle-text-02-bar" className="blinker bar">|</span>
         </p>
     </div>
 
