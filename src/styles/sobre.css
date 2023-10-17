@@ -1,0 +1,37 @@
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre h2 {
+    text-align: center;
+}
+.sobre p {
+    font-size: 4.2vw;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Quicksand', serif;
+}
+.sobre .d {
+    color: rgb(255, 180, 41);
+}
+
+.responsive-container {
+    width: 100%;
+    padding: 13px;
+    max-width: 1100px;
+}
+
+@media only screen and (min-width: 600px){
+    .responsive-container{
+        padding: 10px 30px;
+    }
+    .sobre p {
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .sobre{
+        font-size: 25px;
+    }
+}

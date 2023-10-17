@@ -28,5 +28,5 @@ const Herosecond = () =>
     <div className="hero-second">
         <img src="/images/banner-test.png" className="banner" />
         <br />
-        <a href="#services" className="typer-cta">CONTRATAR AGORA</a>
+        <a href="#servicos" className="typer-cta">CONTRATAR AGORA</a>
     </div>

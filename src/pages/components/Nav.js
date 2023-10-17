@@ -8,9 +8,9 @@ export default function Nav() {
             <details>
                 <summary>Mais</summary>
                 <ul>
-                    <li>Serviços</li>
-                    <li>Sobre</li>
-                    <li>Blog</li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="https://mestreflou.blogspot.com">Blog</a></li>
                     <li><span>Meu app {'  '}<a href='meu-app'>{'➡️'}</a></span></li>
                 </ul>
             </details>

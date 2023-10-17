@@ -1,0 +1,138 @@
+.services {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    gap: 20px;
+    padding: 15px;
+}
+
+.service-card {
+    background-color: white;
+    color: rgb(25, 23, 25);
+    font-family: "dosis";
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    padding: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.449);
+    overflow: hidden;
+    text-decoration: none;
+}
+.service-card-section{
+
+}
+
+.card-label {
+    background-color: rgb(241, 173, 55);
+    border-radius: 0px 0px 20px 0px;
+    color: rgb(37, 37, 37);    
+    padding: 10px 15px;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    animation-delay: 1.5s;
+
+    animation: fade-in-left 2s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 1.4s;
+    animation-fill-mode: both;
+
+}
+.label-text {
+    width: 100%;
+    font-size: 3.8vw;
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px rgb(37, 37, 37);
+}
+.service-card-section > img{
+    width: 60%;
+    margin: 8px;
+}
+.card-img-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-footer {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    font-size: 2.2vw;
+    font-weight: 600;
+    color: rgb(32, 24, 36);
+    background-color: rgba(255, 222, 156, 0.433);
+    font-family: "Quicksand";
+
+}
+.card-footer .left {
+    text-align: start;
+}
+.card-footer .right {
+    text-align: end;
+    text-decoration: underline;
+
+}
+
+.services-viewport {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+@media only screen and (min-width: 768px ) {
+    .services {
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+        padding: 40px;
+    }
+    .label-text {
+        font-size: 2.3vw;
+    }
+    .card-footer {
+        font-size: 1.5vw;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1100px ) {
+    .services{
+        /* background-color: rgba(93, 215, 162, 0.072); */
+        max-width: 1100px;
+    }
+    .label-text {
+        font-size: 110%;
+    }
+    .card-footer {
+        font-size: 70%;
+    }
+}
+
+@keyframes cards {
+    from {margin-top: 500px;}
+}
+
+
+/* Animations */
+
+@keyframes fade-in-left {
+    from {
+       opacity: .0;
+       transform: translateX(-20px);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+ 
+ .fade-in-left {
+        animation-name: fade-in-left;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+ }
