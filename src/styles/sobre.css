@@ -7,6 +7,7 @@
     text-align: center;
 }
 .sobre p {
+    margin-top: 10px;
     font-size: 4.2vw;
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Quicksand', serif;
