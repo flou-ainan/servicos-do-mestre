@@ -1,7 +1,7 @@
 //         <div class="services-viewport">
 //       <h2 class="services-header">Serviços</h2>
 //       <section class="services" id="services">
-
+import { useId } from "react"
 const services = [
     {
         label: "Arte Para Redes",
@@ -57,6 +57,7 @@ export default function Servicos(){
         label={service.label}
         imgName={service.imgName}
         price={service.price}
+        key={useId()}
     />)
     return(
         <div className="services-viewport">

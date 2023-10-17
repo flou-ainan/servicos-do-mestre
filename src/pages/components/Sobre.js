@@ -1,9 +1,9 @@
 export default function Sobre(){
     return(
         <section className="sobre" id="sobre">
-            <div class="responsive-container">
+            <div className="responsive-container">
         <h2 className="center-title">Sobre</h2>
-          <p>
+          <div>
             <p>
               Olá, eu sou o <b>Flou Ainan!</b><br/>
               <span className="d">Designer</span> e <span className="d">programador</span> apaixonado pelo que eu faço.<br/>
@@ -18,7 +18,7 @@ export default function Sobre(){
               com o objetivo de resolver o <b className="d">seu problema</b> da <b className="d">melhor forma </b> 
               com a <b className="d">melhor tecnologia</b> 
             </p>
-          </p>
+          </div>
          </div>
         </section>
     )
