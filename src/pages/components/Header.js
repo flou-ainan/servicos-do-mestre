@@ -65,8 +65,6 @@ const Herosecond = () =>
     </div>
 
 
-
-
 function typeWrite(content, setContent, elementsIds){ //Recieve state object getter end setter and an array of the elements ids in order
     let i = 0;
     let counter;
@@ -84,7 +82,7 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
 
 
     
-    // erase all content data
+    // erase all content data'
     
     setContent(prevContent => {
         let newContent = { ...prevContent }
@@ -106,28 +104,37 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
             return newContent
         })
     }
+    const setText = (elementId, text) => {
+        setContent(prevContent =>{
+            let newContent = {...prevContent}
+            let element = newContent[elementId]
+            element.text=text
+            newContent[elementId] = element
+            return newContent
+        })
+    }
 
-    console.log(content)
-    setBarState('firstSub', "blinker")
+    const getText = (elementId) => {
+        return content[elementId].text
+    }
+
     
     // recieve an array of DOM element IDs that have innerHTML atribute and typewrite them.
     let typeNow = (elementsIds) => {
-       let element = $(elementsIds[i])
-       let barElement = $(`${elementsIds[i]}-bar`)
-       let word = contentsArray[i].split("")
-       element.innerHTML = ""
- 
+       let elementId = elementsIds[i]
+       let word = textsArray[i].split("")
+       console.log(getText(elementId))
        
        var loopTyping = () => {
-          barElement.className = "typing"
+        setBarState(elementId,"typing")
           if (word.length > 0) {
-             element.innerHTML += word.shift();
+             setText(elementId, getText(elementId)+word.shift())
           } else {
             
              counter = setTimeout(() => {
-                barElement.className = "blinker"
+                setBarState(elementId,"blinker")
                 counter = setTimeout(()=>{
-                   barElement.className = "hidden"
+                    setBarState(elementId,"hidden")
                    // Time to loop again hahaha
                    i++
                    if (elementsIds.length > i){
@@ -135,9 +142,9 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
                    }else{
                      
                       i=0
-                      contentsArray = []
+                      textsArray = []
  
-                      counter = setTimeout(() => {typeWrite(elementsIds)},7000)
+                      counter = setTimeout(() => {typeWrite(content,setContent,elementsIds)},7000)
                       return  // TYPENOW ENDING POINT
                    }
              }, wordDelay)
@@ -148,14 +155,13 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
        };
  
        // Typing Loop first call
-       barElement.className = "typing"
+       setBarState(elementId,"typing")
        counter = setTimeout(loopTyping, wordDelay)
     };
     
     // typeNow first call
-    //$(`${elementsIds[0]}-bar`).className = "blinker"
-   // counter = setTimeout(() => typeNow(elementsIds), startDelay)
+    setBarState(elementsIds[i],"blinker")
+    counter = setTimeout(() => typeNow(elementsIds), startDelay)
  }
  
-// typeWrite(content, setContent, ['title', 'firstSub', 'seccondSub'])
  
