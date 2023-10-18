@@ -1,5 +1,6 @@
+import Link from "next/link"
 export default function Nav() {
-    return(
+    return (
         <nav >
             <div className="title">
                 <img src="favicon.png" className="nav-logo" />
@@ -8,10 +9,20 @@ export default function Nav() {
             <details>
                 <summary>Mais</summary>
                 <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="https://mestreflou.blogspot.com">Blog</a></li>
-                    <li><span>Meu app {'  '}<a href='meu-app'>{'➡️'}</a></span></li>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="https://mestreflou.blogspot.com">Blog</a>
+                    </li>
+                    <li>
+                        <Link href='/meu-app'>
+                            Meu app {'  '}{'➡️'}
+                        </Link>
+                    </li>
                 </ul>
             </details>
         </nav>

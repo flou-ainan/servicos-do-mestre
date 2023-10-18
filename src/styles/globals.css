@@ -74,3 +74,8 @@ img {
     font-size: 27pt;
   }
 }
+
+a {
+  font-family: "Mohave";
+  color: rgb(255, 179, 66);
+}
