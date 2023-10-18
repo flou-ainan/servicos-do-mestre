@@ -73,8 +73,10 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
     let textsArray = []
     let startDelay = 950 // starting type delay in milliseconds
     const typingSpeed = 50 // interval between types in milliseconds
+    const speedVariation = 55 // percentage of variation in speed beetween types
     const wordDelay = 300 // waiting time between words in milliseconds
    
+
 
     
     //save all contents data before erasing
@@ -96,6 +98,12 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
 
     })
 
+    const getVarietedTypeTime=() => {
+        let variation = speedVariation/100*typingSpeed
+        let result = (typingSpeed-variation) + (Math.random() * variation)
+        return result
+    }
+
     const setBarState = (elementId, stateClass) => {
         setContent(prevContent =>{
             let newContent = {...prevContent}
@@ -105,6 +113,7 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
             return newContent
         })
     }
+    
     const setText = (elementId, text) => {
         setContent(prevContent =>{
             let newContent = {...prevContent}
@@ -151,7 +160,7 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
              }, 200)
              return false;
           };
-          counter = setTimeout(loopTyping, typingSpeed);
+          counter = setTimeout(loopTyping, getVarietedTypeTime());
        };
  
        // Typing Loop first call
