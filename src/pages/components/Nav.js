@@ -1,9 +1,16 @@
 import Link from "next/link"
+import Image from "next/image"
 export default function Nav() {
     return (
         <nav >
             <div className="title">
-                <img src="favicon.png" className="nav-logo" />
+                <Image 
+                    src="/favicon.png" 
+                    className="nav-logo" 
+                    width={50}
+                    height={50}
+                    alt="icone mestre flou"
+                />
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
             </div>
             <details>

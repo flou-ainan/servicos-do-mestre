@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
+import Image from "next/image";
 
 
 export default function Header() {
@@ -21,15 +22,11 @@ export default function Header() {
             barState: "hidden"
         },
     })
-
  
+    // initialize typewriter
     useEffect(()=>{
        typeWrite(content, setContent, ['title', 'firstSub', 'secondSub'])
     },[])
-    
-
-
-
 
     return (
         <header className="hero">
@@ -59,7 +56,12 @@ const Herofirst = (props) =>{
 
 const Herosecond = () =>
     <div className="hero-second">
-        <img src="/images/banner-test.png" className="banner" />
+        <Image
+            src="/images/banner-test.png"
+            className="banner"
+            width={300}
+            height={300}
+            alt="banner frontal"/>
         <br />
         <a href="#servicos" className="typer-cta">CONTRATAR AGORA</a>
     </div>
@@ -83,7 +85,6 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
 
     
     // erase all content data'
-    
     setContent(prevContent => {
         let newContent = { ...prevContent }
         for (let index = 0; index < elementsIds.length; index++) {
@@ -118,7 +119,6 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
         return content[elementId].text
     }
 
-    
     // recieve an array of DOM element IDs that have innerHTML atribute and typewrite them.
     let typeNow = (elementsIds) => {
        let elementId = elementsIds[i]
@@ -163,5 +163,3 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
     setBarState(elementsIds[i],"blinker")
     counter = setTimeout(() => typeNow(elementsIds), startDelay)
  }
- 
- 

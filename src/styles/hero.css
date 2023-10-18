@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url('/images/logos-background-mobile.jpg');
+    background-image: url('/images/logos-background-mobile.webp');
     background-repeat: no-repeat;
     background-color: black;
     background-position-y: top;
@@ -123,7 +123,7 @@
 
 @media only screen and (min-width: 650px) {
     .hero {
-        background-image: url("/images/logos-background-tablet.jpg");
+        background-image: url("/images/logos-background-tablet.webp");
     }
 
     .hero-content {
@@ -167,7 +167,7 @@
 
 @media only screen and (min-width: 950px) {
     .hero {
-        background-image: url("/images/logos-background-desk.jpg");
+        background-image: url("/images/logos-background-desk.webp");
         align-items: center;
     }
 
