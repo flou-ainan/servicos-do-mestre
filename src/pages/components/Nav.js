@@ -23,7 +23,7 @@ export default function Nav() {
                         <a href="#sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="https://mestreflou.blogspot.com">Blog</a>
+                        <Link href={'/blog'}>Blog</Link>
                     </li>
                     <li>
                         <Link href='/meu-app'>
