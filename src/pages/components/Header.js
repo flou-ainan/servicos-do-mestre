@@ -72,9 +72,9 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
     let counter;
     let textsArray = []
     let startDelay = 950 // starting type delay in milliseconds
-    const typingSpeed = 50 // interval between types in milliseconds
-    const speedVariation = 55 // percentage of variation in speed beetween types
-    const wordDelay = 300 // waiting time between words in milliseconds
+    const typingSpeed = 55 // interval between types in milliseconds
+    const speedVariation = 35 // percentage of variation in speed beetween types
+    const wordDelay = 370 // waiting time between words in milliseconds
    
 
 

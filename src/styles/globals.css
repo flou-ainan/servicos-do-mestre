@@ -79,3 +79,16 @@ a {
   font-family: "Mohave";
   color: rgb(255, 179, 66);
 }
+
+
+/* Elements zoom on hover */
+
+.hover-zoom{
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-zoom:hover {
+  transform: scale(1.04);
+  animation: card-zoom 
+}
+

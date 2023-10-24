@@ -76,7 +76,7 @@ function ServiceCard(props) {
     const { label, price, imgName } = props
 
     return (
-        <a className="service-card" href="#sobre">
+        <a className="service-card hover-zoom" href="#sobre">
             <div className="service-card-section card-label">
                 <span className="label-text">{label}</span>
             </div>

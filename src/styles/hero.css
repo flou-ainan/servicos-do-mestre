@@ -41,6 +41,7 @@
 }
 
 .hero-content h1 {
+    min-width: 340px;
     font-family: 'Mohave';
     font-weight: 500;
     font-size: 30pt;
@@ -50,6 +51,7 @@
     font-family: 'Playfair Display', serif;
     font-size: large;
     font-weight: 500;
+    min-height: 70px;
 }
 
 
