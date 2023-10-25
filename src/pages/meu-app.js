@@ -16,11 +16,11 @@ export default function meuApp(){
         <meta name="description" content="Meu appzao boladao" />
   
         <meta property="og:title" content="Meu App !"/>
-        <meta property="og:site_name" content="Mestre Flou "/>
+        <meta property="og:site_name" content="Mestre Flou"/>
         <meta property="og:url" content="mestreflou.com.br/meu-app"/>
         <meta property="og:description" content="Meu apzao boladao"/>
         <meta property="og:type" content="product.group"/>
-        <meta property="og:image" content="/images/background.jpg"></meta>
+        <meta property="og:image" content="images/background.jpg"></meta>
         </Head>
         <div className="meu-app">
             <h1>Bem Vindo(a) ao meu App</h1><br/>
