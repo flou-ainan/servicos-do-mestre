@@ -11,6 +11,7 @@ export default function Home() {
       <Header />
       <Servicos />
       <Sobre />
+      <iframe src="https://app.simplenote.com/p/4t4z9J" className='iframe'/>
     </main>
   )
 }

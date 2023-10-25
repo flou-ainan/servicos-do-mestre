@@ -8,7 +8,7 @@
 }
 .sobre p {
     margin-top: 15px;
-    font-size: 4.2vw;
+    font-size: 5.2vw;
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Quicksand', serif;
 }
@@ -27,12 +27,12 @@
         padding: 10px 30px;
     }
     .sobre p {
-        font-size: 18pt;
+        font-size: 19pt;
     }
 }
 
 @media only screen and (min-width: 900px){
     .sobre{
-        font-size: 25px;
+        font-size: 23pt;
     }
 }
