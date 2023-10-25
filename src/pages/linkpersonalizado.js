@@ -4,14 +4,15 @@ import Image from "next/image"
 import { useEffect } from "react"
 export default function LinkPersonalizado() {
     const og = {
-        title: "Anuncie ⚠️ Link Proffissional 🌐️",
-        description: "Personalize seus Links e Venda MUITO MAIS!",
-        siteName: "Mestre Flou Soluções Digitais",
-        type: "product"
+        title: "⚠️Anuncie⚠️ Link Profissional 🚀️",
+        description: "Personalize seus Links🔗️ e Venda MUITO MAIS!💰️",
+        siteName: "Mestre Flou ✊️| Soluções Digitais 🌐️",
+        type: "product",
+        image: "/images/link-outdoor.jpg"
 
     }
     useEffect(()=>{
-        setTimeout(() => {window.location.replace("/")},4000)
+        setTimeout(() => {window.location.replace("/")},25000)
     })
     return (
         <>
@@ -19,7 +20,10 @@ export default function LinkPersonalizado() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={og.title} />
                 <meta name="twitter:site" content={og.siteName} />
+                <meta name="twitter:description" content={og.description} />
+
                 <meta name="twitter:creator" content="@FlouAinan" />
+                <meta name="twitter:image" content={og.image}></meta>
 
                 <meta name="description" content={og.description} />
 
@@ -28,7 +32,7 @@ export default function LinkPersonalizado() {
                 <meta property="og:url" content="mestreflou.com.br/meu-app" />
                 <meta property="og:description" content={og.description} />
                 <meta property="og:type" content={og.type} />
-                <meta property="og:image" content="/images/link-outdoor.jpg" />
+                <meta property="og:image" content="/images/link-outdoor.jpg"></meta>
             </Head>
             <div className="meu-app">
                 <Image src="/images/link-preview.webp"
@@ -43,9 +47,16 @@ export default function LinkPersonalizado() {
                 <h1>Aguarde para ser redirecionado(a)</h1>                
                 <br/><br/>
                     <span className="loader"></span>
+                    <br/><br/><br/><br/><br/>
             </div>
             <style jsx>{`
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         .meu-app{
+            padding-top: 20px;
             background-image: linear-gradient( rgb(10, 9, 11), rgb(45, 43, 47));
         }
         .loader {

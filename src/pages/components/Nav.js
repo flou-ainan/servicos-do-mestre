@@ -26,8 +26,8 @@ export default function Nav() {
                         <Link href={'/blog'}>Blog</Link>
                     </li>
                     <li>
-                        <Link href='/meu-app'>
-                            Meu app {'  '}{'➡️'}
+                        <Link href='/linkpersonalizado'>
+                            Link Exemplo Link Personalizado {'  '}{'➡️'}
                         </Link>
                     </li>
                 </ul>
