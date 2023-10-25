@@ -29,10 +29,10 @@ export default function LinkPersonalizado() {
 
                 <meta property="og:title" content={og.title} />
                 <meta property="og:site_name" content={og.siteName} />
-                <meta property="og:url" content="mestreflou.com.br/meu-app" />
+                <meta property="og:url" content="mestreflou.com.br/linkpersonalizado" />
                 <meta property="og:description" content={og.description} />
                 <meta property="og:type" content={og.type} />
-                <meta property="og:image" content="/images/link-outdoor.jpg"></meta>
+                <meta property="og:image" content={og.image}></meta>
             </Head>
             <div className="meu-app">
                 <Image src="/images/link-preview.webp"
