@@ -8,7 +8,7 @@ export default function LinkPersonalizado() {
         description: "Personalize seus Links🔗️ e Venda MUITO MAIS!💰️",
         siteName: "Mestre Flou ✊️| Soluções Digitais 🌐️",
         type: "product",
-        image: "/images/link-outdoor.jpg"
+        image: "images/link-outdoor.jpg"
 
     }
     useEffect(()=>{
