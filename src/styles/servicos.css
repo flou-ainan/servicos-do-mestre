@@ -53,6 +53,7 @@
 }
 .banner-cta {
     margin: 30px 0px;
+    width: 100%;
 }
 .card-img-holder {
     display: flex;
