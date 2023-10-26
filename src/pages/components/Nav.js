@@ -14,7 +14,7 @@ export default function Nav() {
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
             </div>
             <details>
-                <summary>Mais</summary>
+                <summary>ACESSAR</summary>
                 <ul>
                     <li>
                         <a href="#servicos">Serviços</a>
@@ -27,7 +27,7 @@ export default function Nav() {
                     </li>
                     <li>
                         <Link href='/linkpersonalizado'>
-                            Link Exemplo Link Personalizado {'  '}{'➡️'}
+                            Mini Site {'➡️'}
                         </Link>
                     </li>
                 </ul>

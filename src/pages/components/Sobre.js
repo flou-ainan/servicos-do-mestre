@@ -19,7 +19,11 @@ export default function Sobre(){
               com a <b className="d">melhor tecnologia</b> 
             </p>
           </div>
+          
          </div>
+         <br/>   <br/>
+         <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">CONTRATAR AGORA</a>
+         <br/>   <br/>
         </section>
     )
 }

@@ -35,35 +35,34 @@ export default function LinkPersonalizado() {
                 <meta property="og:image" content={og.image}></meta>
             </Head>
             <div className="meu-app">
-                <Image src="/images/link-preview.webp"
+                <Image src="/images/flyer-quadrado.webp"
                     width={800}
                     height={800}
                     style={{
                         objectFit: "contain",
-                        maxWidth: '700px',
-                        width: "76%"
+                        maxWidth: '470px',
+                        width: "75%"
                     }}
-                /><br/>
-                <h1>Aguarde para ser redirecionado(a)</h1>                
-                <br/><br/>
+                />
+                <h3>Aguarde para ser redirecionado(a)</h3>                
                     <span className="loader"></span>
                     <br/><br/><br/><br/><br/>
             </div>
             <style jsx>{`
-        h1 {
+        h3 {
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .meu-app{
-            padding-top: 20px;
+            padding-top: 70px;
             background-image: linear-gradient( rgb(10, 9, 11), rgb(45, 43, 47));
         }
         .loader {
-        max-width: 200px;
-        width: 40vw;
-        height: 40vw;
-        max-height: 200px;
+        max-width: 100px;
+        width: 30vw;
+        height: 30vw;
+        max-height: 100px;
         border-radius: 50%;
         position: relative;
         animation: rotate 1s linear infinite

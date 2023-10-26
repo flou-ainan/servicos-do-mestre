@@ -3,61 +3,16 @@
 //       <section class="services" id="services">
 
 import Image from "next/image"
+import servicos from "@/servicos.json"
 
-const services = [
-    {
-        label: "Arte Para Redes",
-        imgName: "artes-para-redes.png",
-        price: "19,00",
-        
-    },
-    {
-        label: "Seu Comércio no Digital",
-        imgName: "online-shop.png",
-        price: "799,00",
-        
-    },
-    {
-        label: "Website",
-        imgName: "website.png",
-        price: "399,00",
-        
-    },
-    {
-        label: "Landing Page",
-        imgName: "website-estatico.png",
-        price: "299,00",
-        
-    },
-    {
-        label: "Design de Logomarca",
-        imgName: "logos-04-wshadow.jpg",
-        price: "129,00",
-        
-    },
-    {
-        label: "Edição de Vídeo",
-        imgName: "edicao-de-video3.jpg",
-        price: "59,00",
-        
-    },
-    {
-        label: "Design Cartão de Visita",
-        imgName: "cartao-de-visita.png",
-        price: "139,00",
-    },
-    {
-        label: "Convite Animado Digital",
-        imgName: "convite-animado.jpg",
-        price: "29,00",
-    }
-]
+const services = servicos
 
 export default function Servicos(){
     const servicesList = services.map(service =>
     <ServiceCard
         label={service.label}
         imgName={service.imgName}
+        description={service.description}
         price={service.price}
         key={service.label}
     />)
@@ -67,16 +22,27 @@ export default function Servicos(){
         <section className="services" id="servicos">
                 {servicesList}
         </section>
+        <br/>
+        <Image
+        id="whats"
+        className="banner-cta"
+        src="/images/cta-before.jpg"
+        width={1600}
+        height={446}
+        alt="banner"        
+        />
+        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">CONTRATAR AGORA</a>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
     )
 }
 
 
 function ServiceCard(props) {
-    const { label, price, imgName } = props
+    const { label, price, imgName, description } = props
 
     return (
-        <a className="service-card hover-zoom" href="#sobre">
+        <a className="service-card hover-zoom" href="#whats">
             <div className="service-card-section card-label">
                 <span className="label-text">{label}</span>
             </div>

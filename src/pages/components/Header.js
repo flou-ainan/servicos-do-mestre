@@ -63,7 +63,7 @@ const Herosecond = () =>
             height={300}
             alt="banner frontal"/>
         <br />
-        <a href="#servicos" className="typer-cta">CONTRATAR AGORA</a>
+        <a href="#servicos" className="typer-cta">CONTRATAR SERVIÇO</a>
     </div>
 
 

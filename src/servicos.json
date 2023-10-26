@@ -1,0 +1,89 @@
+[
+        {
+            "label": "Link Personalizado",
+            "imgName": "linkwhatsapp.webp",
+            "description":"Previsualização profissional de links em redes sociais",
+            "price": "19,00"
+            
+        },
+        {
+            "label": "Artes Para Redes",
+            "imgName": "artes-para-redes.webp",
+            "description":"",
+            "price": "19,00",
+            "comments": "Trocar por trecho do meu feed no instagram"
+            
+        },
+        {
+            "label": "Artes Gráficas",
+            "imgName": "arte-grafica.webp",
+            "description":"",
+            "price": "49,00"
+            
+        },
+        {
+            "label": "Logomarca",
+            "imgName": "logomarca.webp",
+            "description":"",
+            "price": "149,00"
+            
+        },
+        {
+            "label": "Website",
+            "imgName": "website-estatico.png",
+            "description":"",
+            "price": "399,00"
+            
+        },
+        {
+            "label": "Mini Website",
+            "imgName": "flyer-quadrado.webp",
+            "description": "",
+            "price": "99,00"
+            
+        },
+        {
+            "label": "Catálogos",
+            "imgName": "catalogo.webp",
+            "description":"",
+            "price": "128,00"
+            
+        },
+        {
+            "label": "Aplicativo Web",
+            "imgName": "app-web.webp",
+            "description":"",
+            "price": "748,00"
+            
+        },
+        {
+            "label": "Seu Comércio no Digital",
+            "imgName": "online-shop.webp",
+            "description":"",
+            "price": "699,00"
+        },
+        {
+            "label": "Edição de Vídeo",
+            "imgName": "edicao-de-video.jpg",
+            "description":"",
+            "price": "60,00"
+        },
+        {
+            "label": "QRCode Estilizado",
+            "imgName": "qr-code.svg",
+            "description":"",
+            "price": "29,00"
+        },
+        {
+            "label": "Assistência Remota",
+            "imgName": "avatar.webp",
+            "description":"",
+            "price": "50,00"
+        },
+        {
+            "label": "Convite Animado",
+            "imgName": "convite-animado.jpg",
+            "description":"",
+            "price": "60,00"
+        }
+]
