@@ -34,7 +34,7 @@ export default function Home() {
       <meta property="og:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência"/>
       <meta property="og:type" content="product.group"/>
-      <meta property="og:image" content="/link-preview-compact.webp"></meta>
+      <meta property="og:image" content="/images/link-preview-compact-02.jpg"></meta>
     </Head>
     <main className='body'>
       <Header />
