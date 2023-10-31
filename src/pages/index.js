@@ -21,9 +21,13 @@ export default function Home() {
   return (
     <>
     <Head>
+    <meta property="twitter:title" content="Mestre Flou ✊ | Soluções Digitais 🌐"/>
     <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@FlouAinan" />
+      <meta name="twitter:site" content="metreflou.com.br" />
       <meta name="twitter:creator" content="@FlouAinan" />
+      <meta name="twitter:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
+        Aplicativos Web 🔸QR Codes 🔸Assistência" />
+      <meta name="twitter:image" content="/images/link-preview-compact-02.jpg"></meta>
       
       <meta name="description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência" />
