@@ -27,7 +27,7 @@ export default function Home() {
       <meta name="twitter:creator" content="@FlouAinan" />
       <meta name="twitter:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência" />
-      <meta name="twitter:image" content="images/link-preview-compact-02.jpg"></meta>
+      <meta name="twitter:image" content="https://i.ibb.co/kGQPGp3/link-preview-compact-02.jpg"></meta>
       
       <meta name="description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência" />
@@ -38,7 +38,7 @@ export default function Home() {
       <meta property="og:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência"/>
       <meta property="og:type" content="product.group"/>
-      <meta property="og:image" content="images/link-preview-compact-02.jpg"></meta>
+      <meta property="og:image" content="https://i.ibb.co/kGQPGp3/link-preview-compact-02.jpg"></meta>
     </Head>
     <main className='body'>
       <Header />
