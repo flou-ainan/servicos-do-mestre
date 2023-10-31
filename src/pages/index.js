@@ -23,7 +23,7 @@ export default function Home() {
     <Head>
     <meta property="twitter:title" content="Mestre Flou ✊ | Soluções Digitais 🌐"/>
     <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="metreflou.com.br" />
+      <meta name="twitter:site" content="" />
       <meta name="twitter:creator" content="@FlouAinan" />
       <meta name="twitter:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência" />
@@ -32,10 +32,10 @@ export default function Home() {
       <meta name="description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência" />
 
-      <meta property="og:title" content="Mestre Flou ✊ | Soluções Digitais 🌐"/>
-      <meta property="og:site_name" content="Mestre Flou "/>
+      <meta name="og:title" property="og:title" content="Mestre Flou ✊ | Soluções Digitais 🌐"/>
+      <meta property="og:site_name" content=""/>
       <meta property="og:url" content="mestreflou.com.br"/>
-      <meta property="og:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
+      <meta name="og:description" property="og:description" content="Logos🔸Websites🔸Catálogos 🔸Artes digitais
         Aplicativos Web 🔸QR Codes 🔸Assistência"/>
       <meta property="og:type" content="product.group"/>
       <meta property="og:image" content="https://i.ibb.co/kGQPGp3/link-preview-compact-02.jpg"></meta>
