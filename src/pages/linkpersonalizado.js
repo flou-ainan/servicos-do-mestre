@@ -12,7 +12,7 @@ export default function LinkPersonalizado() {
 
     }
     useEffect(()=>{
-        setTimeout(() => {window.location.replace("/")},25000)
+        setTimeout(() => {window.location.replace("/")},7000)
     })
     return (
         <>

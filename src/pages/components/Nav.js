@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-export default function Nav() {
+export default function Nav(props) {
     return (
         <nav >
             <div className="title">
@@ -12,6 +12,7 @@ export default function Nav() {
                     alt="icone mestre flou"
                 />
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
+                <span>{}</span>
             </div>
             <details>
                 <summary>ACESSAR</summary>

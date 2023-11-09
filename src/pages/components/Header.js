@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Image from "next/image";
-
+import { useRouter } from 'next/router'
 
 export default function Header() {
     const titleText = "O Melhor do Digital"
     const firstSubText = "Feito sob medida para você"
-    const secondSubText = "do seu jeito" 
+    const secondSubText = "do seu jeito"
+    
+    const router = useRouter();
+    const { s } = router.query;
 
     const [content, setContent] = useState({
         title: {
@@ -30,7 +33,7 @@ export default function Header() {
 
     return (
         <header className="hero">
-            <Nav />
+            <Nav medium={s}/>
             <div className="hero-content">
                 <Herofirst content={content} />
                 <Herosecond />

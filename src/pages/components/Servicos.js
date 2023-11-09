@@ -31,8 +31,19 @@ export default function Servicos(){
         height={446}
         alt="banner"        
         />
-        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">CONTRATAR AGORA</a>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <Image
+            src={"/images/avatar.webp"}
+            width={500}
+            height={500}
+            alt={"Flou te oferece os melhores serviços"}
+            style={{
+                borderRadius: "40px",
+                maxWidth: "500px",
+                width:"90vw"
+            }}
+        />
+        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta" style={{marginTop:"-80px"}}>CONTRATAR AGORA</a><br/><br/><br/>
+        
         </div>
     )
 }
