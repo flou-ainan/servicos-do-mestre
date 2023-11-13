@@ -4,6 +4,7 @@ import Sobre from './components/Sobre'
 import Servicos from './components/Servicos'
 import { useEffect } from 'react'
 import Head from 'next/head'
+import BotaoFlutuante from './components/BotaoFlutuante'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,6 +45,7 @@ export default function Home() {
       <Header />
       <Servicos />
       <Sobre />
+      <BotaoFlutuante />
     </main>
     </>
   )
