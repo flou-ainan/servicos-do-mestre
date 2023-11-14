@@ -4,6 +4,7 @@ export default function Nav(props) {
     return (
         <nav >
             <div className="title">
+                <Link href="/">
                 <Image 
                     src="/favicon.png" 
                     className="nav-logo" 
@@ -11,6 +12,7 @@ export default function Nav(props) {
                     height={50}
                     alt="icone mestre flou"
                 />
+                </Link>
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
                 <span>{}</span>
             </div>
@@ -18,10 +20,16 @@ export default function Nav(props) {
                 <summary>ACESSAR</summary>
                 <ul>
                     <li>
-                        <a href="#servicos">Serviços</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#sobre">Sobre</a>
+                        <a href="/consultoria">Consultoria</a>
+                    </li>
+                    <li>
+                        <a href="/#servicos">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="/#sobre">Sobre</a>
                     </li>
                     <li>
                         <Link href={'/blog'}>Blog</Link>
