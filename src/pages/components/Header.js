@@ -34,6 +34,7 @@ export default function Header() {
     return (
         <header className="hero">
             <Nav medium={s}/>
+            <span className="local">📌️ Guapimirim - RJ</span>
             <div className="hero-content">
                 <Herofirst content={content} />
                 <Herosecond />

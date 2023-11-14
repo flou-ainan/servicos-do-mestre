@@ -121,6 +121,15 @@
     }
 }
 
+.local{
+    position: absolute;
+    align-self: flex-end;
+    top: 20px;
+    font-family: "bebas neue";
+    font-size: 11pt;
+    padding: 22px;
+}
+
 /* RESPONSIVE MEDIA QUERIES FOR LARGER SCREENS */
 
 @media only screen and (min-width: 650px) {
@@ -218,5 +227,8 @@
         font-size: 22px;
         padding: 12px 20px;
         text-align: center;
+    }
+    .local {
+        top: 38px;
     }
 }
