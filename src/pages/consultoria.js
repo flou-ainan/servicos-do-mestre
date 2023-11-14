@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Nav from "./components/Nav"
+import Link from "next/link"
 
 export default function Consultoria(){
     return(
@@ -21,9 +22,10 @@ export default function Consultoria(){
               height="1000px">
               Carregando…
             </iframe>
-            <span className="to-top-btn"
-              onClick={()=>{window.location.href=("#hero")}}
-            >⬆️ voltar ao topo ⬆️</span>
+            <Link href="#hero">
+            <span className="to-top-btn">⬆️ voltar ao topo ⬆️</span>
+            </Link>
+            <br/><br/>
         </div>
         <style jsx>{`
           img{

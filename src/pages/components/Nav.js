@@ -20,16 +20,16 @@ export default function Nav(props) {
                 <summary>ACESSAR</summary>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/consultoria">Consultoria</a>
+                        <Link href="/consultoria">Consultoria</Link>
                     </li>
                     <li>
-                        <a href="/#servicos">Serviços</a>
+                        <Link href="/#servicos">Serviços</Link>
                     </li>
                     <li>
-                        <a href="/#sobre">Sobre</a>
+                        <Link href="/#sobre">Sobre</Link>
                     </li>
                     <li>
                         <Link href={'/blog'}>Blog</Link>
