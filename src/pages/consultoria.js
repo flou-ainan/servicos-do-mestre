@@ -14,6 +14,10 @@ export default function Consultoria(){
                 width={800}
                 height={350}
                 alt="Consultoria Gratis do Mestre Flou"
+                style={{
+                  width: "80vw",
+                  maxWidth: '800px'
+                }}
             />
             <iframe
               id="form"

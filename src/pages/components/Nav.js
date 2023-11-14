@@ -23,9 +23,6 @@ export default function Nav(props) {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/consultoria">Consultoria</Link>
-                    </li>
-                    <li>
                         <Link href="/#servicos">Serviços</Link>
                     </li>
                     <li>
