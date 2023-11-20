@@ -4,6 +4,7 @@
 
 import Image from "next/image"
 import servicos from "@/servicos.json"
+import WAIcon from "./WAIcon"
 
 const services = servicos
 
@@ -42,7 +43,7 @@ export default function Servicos(){
                 width:"90vw"
             }}
         />
-        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta" style={{marginTop:"-80px"}}>CONTRATAR AGORA</a><br/><br/><br/>
+        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta" style={{marginTop:"-80px"}}>FALE COMIGO <WAIcon/></a><br/><br/><br/>
         
         </div>
     )

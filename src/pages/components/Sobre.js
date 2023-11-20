@@ -1,3 +1,5 @@
+import WAIcon from "./WAIcon";
+
 export default function Sobre(){
     return(
         <section className="sobre" id="sobre">
@@ -22,7 +24,7 @@ export default function Sobre(){
           
          </div>
          <br/>   <br/>
-         <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">CONTRATAR AGORA</a>
+         <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">FALE COMIGO <WAIcon/></a>
          <br/>   <br/>
         </section>
     )

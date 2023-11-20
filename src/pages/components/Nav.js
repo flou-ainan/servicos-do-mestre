@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import WAIcon from "./WAIcon"
 export default function Nav(props) {
     return (
         <nav >
@@ -15,6 +16,7 @@ export default function Nav(props) {
                 </Link>
                 <span className="title-label">Mestre Flou Soluções Digitais</span>
                 <span>{}</span>
+                <span className="local">📌️ Guapimirim - RJ</span>
             </div>
             <details>
                 <summary>ACESSAR</summary>
@@ -30,6 +32,9 @@ export default function Nav(props) {
                     </li>
                     <li>
                         <Link href={'/blog'}>Blog</Link>
+                    </li>
+                     <li>
+                        <Link href={'/blog'}>Link Personalizado <WAIcon/></Link>
                     </li>
                     <li>
                         <Link href='/linkpersonalizado'>

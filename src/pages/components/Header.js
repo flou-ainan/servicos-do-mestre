@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Image from "next/image";
+import WAIcon from "./WAIcon";
 import { useRouter } from 'next/router'
 
 export default function Header() {
@@ -34,7 +35,6 @@ export default function Header() {
     return (
         <header className="hero">
             <Nav medium={s}/>
-            <span className="local">📌️ Guapimirim - RJ</span>
             <div className="hero-content">
                 <Herofirst content={content} />
                 <Herosecond />
@@ -67,7 +67,7 @@ const Herosecond = () =>
             height={300}
             alt="banner frontal"/>
         <br />
-        <a href="#servicos" className="typer-cta">CONTRATAR SERVIÇO</a>
+        <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">FALE COMIGO<WAIcon/></a>
     </div>
 
 
