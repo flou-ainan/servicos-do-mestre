@@ -34,7 +34,7 @@ export default function Nav(props) {
                         <Link href={'/blog'}>Blog</Link>
                     </li>
                      <li>
-                        <Link href={'/blog'}>Link Personalizado <WAIcon/></Link>
+                        <Link href={'https://flou-ainan.github.io/flow-office-apps-wpp-custom-link/'}>Link Personalizado <WAIcon/></Link>
                     </li>
                     <li>
                         <Link href='/linkpersonalizado'>
