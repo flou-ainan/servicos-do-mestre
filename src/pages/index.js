@@ -6,6 +6,8 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import BotaoFlutuante from './components/BotaoFlutuante'
 import { Helmet } from 'react-helmet';
+import WelcomeVideo from './components/WelcomeVideo'
+import Planos from './components/Planos'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,6 +46,7 @@ export default function Home() {
       </Head>
       <main className='body'>
         <Header />
+        <WelcomeVideo/>
         <Servicos />
         <Sobre />
         <BotaoFlutuante />

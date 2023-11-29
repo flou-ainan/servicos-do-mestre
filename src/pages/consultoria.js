@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Nav from "./components/Nav"
 import Link from "next/link"
+import YoutubePlayer from "./components/YouTubePlayer"
 
 export default function Consultoria(){
     return(
@@ -19,19 +20,20 @@ export default function Consultoria(){
                   maxWidth: '800px'
                 }}
             />
-            <iframe
-              id="form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSec418eoW0mfVTYRHIbnBdtclqzvlQ9V8zwHpC4Df_bi0pKlA/viewform?embedded=true"
-              width="100%" 
-              height="1000px">
-              Carregando…
-            </iframe>
+            <div className="video-container">
+              <YoutubePlayer
+              embedId="GELIiEfxImY"
+              />
+            </div>
             <Link href="#hero">
             <span className="to-top-btn">⬆️ voltar ao topo ⬆️</span>
             </Link>
             <br/><br/>
         </div>
         <style jsx>{`
+          .video-container{
+            max-width: 800px;
+          }
           img{
             width: 90%;
             max-width: 800px;

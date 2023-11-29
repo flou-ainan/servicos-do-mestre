@@ -26,7 +26,7 @@
 .hero-first {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 15px;
     animation: hero-comes 1.2s ease-out;
 }
 
@@ -36,22 +36,22 @@
 }
 
 .banner {
-    width: 250px;
-    margin: 20px;
+    width: 200px;
+    margin: 0px;
 }
 
 .hero-content h1 {
     min-width: 340px;
     font-family: 'Mohave';
     font-weight: 500;
-    font-size: 30pt;
+    font-size: 26pt;
 }
 
 .hero-content p {
     font-family: 'Playfair Display', serif;
     font-size: large;
     font-weight: 500;
-    min-height: 70px;
+    min-height: 60px;
 }
 
 
@@ -64,8 +64,8 @@
 }
 
 .typer-cta {
-    font-size: 20px;
-    padding: 8px 18px;
+    font-size: 18px;
+    padding: 5px 18px;
     max-width: 75vw;
     background-color: #f49600;
     border-radius: 4px;
