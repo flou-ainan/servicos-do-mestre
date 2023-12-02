@@ -2,12 +2,13 @@ import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Sobre from './components/Sobre'
 import Servicos from './components/Servicos'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import BotaoFlutuante from './components/BotaoFlutuante'
 import { Helmet } from 'react-helmet';
 import WelcomeVideo from './components/WelcomeVideo'
 import Planos from './components/Planos'
+import ModalLoader from './components/ModalLoader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,9 @@ export default function Home() {
       });
   }, [])
 
+  const [isModalShown, setModalShown] = useState(false)
+  const [modalElement, setModalElement] = useState(<div> <h1>Sou um Componentye Carregado no Modal</h1> </div>)
+9
   return (
     <>
       <Head>
@@ -45,8 +49,19 @@ export default function Home() {
         <meta property="og:image" content="https://i.ibb.co/kGQPGp3/link-preview-compact-02.jpg"></meta>
       </Head>
       <main className='body'>
+        {
+        isModalShown &&
+        <ModalLoader
+          component={modalElement}
+          setModalShown={setModalShown}
+        />}
+
         <Header />
         <WelcomeVideo/>
+        <Planos 
+          setModalElement={setModalElement}
+          setModalShown={setModalShown}
+        />
         <Servicos />
         <Sobre />
         <BotaoFlutuante />

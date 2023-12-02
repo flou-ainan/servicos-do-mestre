@@ -22,6 +22,7 @@ export default function YoutubePlayer({ embedId }) {
         }}
         src={`https://www.youtube.com/embed/${embedId}`}
         frameBorder="0"
+        allowFullScreen
       /></div>
       <style jsx>{`  
   `}</style>

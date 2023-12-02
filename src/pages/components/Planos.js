@@ -1,18 +1,30 @@
 import Image from "next/image"
-export default function Planos(){
+import PlanoDiscipulo from "./planos/PlanoDiscipulo"
+export default function Planos({setModalElement, setModalShown}){
     return(
-        <Image
-            src="/images/planos-test.webp"
-            width={986}
-            height={562}
-            alt="Planos Mensais Mestre Flou"
-            style={{
-                objectFit:"contain",
-                width: "90%",
-                maxWidth: "950px",
-                alignSelf: "center",
-                marginTop:"20px"
-            }}
-        />
+        <>
+        <div className="planos">
+            <PlanoDiscipulo
+                setModalElement={setModalElement}
+                setModalShown={setModalShown}
+            />     
+        </div>
+        <style jsx>{`
+            .planos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 30px 15px;
+            }
+        @media only screen and (min-width: 750px) {
+            .planos {
+                flex-direction: row;
+                padding: 70px 15px;
+            }    
+        }
+        `}</style>
+        </>
     )
 }
