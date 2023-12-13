@@ -21,8 +21,8 @@ export default function YoutubePlayer({ embedId }) {
           height: "100%",
         }}
         src={`https://www.youtube.com/embed/${embedId}`}
-        frameBorder="0"
         allowFullScreen
+        frameBorder="0"
       /></div>
       <style jsx>{`  
   `}</style>
