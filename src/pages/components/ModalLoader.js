@@ -12,7 +12,10 @@ export default function ModalLoader({component, setModalShown}){
         >
             <div className="modal">
                 <div className="modal-header">
-                    <span className="close">x</span>
+                    <span
+                        className="close"
+                        onClick={() => setModalShown(false)}
+                    >x</span>
                 </div>
                 <div className="modal-body">
                     {component}
@@ -28,6 +31,7 @@ export default function ModalLoader({component, setModalShown}){
                 margin-bottom: 20px;
                 width: 90%;
                 height: auto;
+                max-height: 90vh;
                 min-height: 300px;
                 max-width: 900px;
                 background-color: white;
@@ -47,9 +51,10 @@ export default function ModalLoader({component, setModalShown}){
                 -webkit-backdrop-filter: blur(4);
             }
             .modal-header{
-                justify-content: flex-end;
-                flex-direction: row;
-                align-items: flex-end;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
             }
             .modal-body{
                 display: flex;
@@ -57,13 +62,19 @@ export default function ModalLoader({component, setModalShown}){
                 align-self: stretch;
                 height: 100%;
                 padding: 10px;
+                overflow-x: auto;
 
             }
             .close{
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 font-weight: 700;
                 font-size: 18pt;
-                margin-left: auto;
+                width: 25px;
+                height: 25px;
+                margin: 5px;
+                cursor: pointer;
             }
 
             `}</style>

@@ -1,5 +1,7 @@
 import Image from "next/image"
 import PlanoDiscipulo from "./planos/PlanoDiscipulo"
+import PlanoMestre from "./planos/PlanoMestre"
+import PlanoPersonalizado from "./planos/PlanoPersonalizado"
 export default function Planos({setModalElement, setModalShown}){
     return(
         <>
@@ -7,7 +9,14 @@ export default function Planos({setModalElement, setModalShown}){
             <PlanoDiscipulo
                 setModalElement={setModalElement}
                 setModalShown={setModalShown}
-            />     
+            /><PlanoMestre
+            setModalElement={setModalElement}
+            setModalShown={setModalShown}
+            />
+            <PlanoPersonalizado
+                setModalElement={setModalElement}
+                setModalShown={setModalShown}
+            />   
         </div>
         <style jsx>{`
             .planos {
@@ -22,7 +31,13 @@ export default function Planos({setModalElement, setModalShown}){
             .planos {
                 flex-direction: row;
                 padding: 70px 15px;
+                transform: scale(0.8);
             }    
+        }
+        @media only screen and (min-width: 950px) {
+            .planos {
+                transform: scale(1);
+            }
         }
         `}</style>
         </>
