@@ -13,7 +13,7 @@ export default function PlanoMestre({setModalShown, setModalElement}){
                 width={300}
                 height={500}
             />
-            <a href="https://wa.me/55998138369?text=Ol%C3%A1%20Flou%2C%20estou%20interessado%20no%20plano%20mensal%20do%20Mestre%0A">
+            <a href="https://wa.me/5535998138369?text=Ol%C3%A1%20Flou%2C%20estou%20interessado%20no%20plano%20mensal%20do%20Mestre%0A">
                 <span
                     className="cta-plano"
                     onClick={
