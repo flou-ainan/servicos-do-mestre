@@ -1,0 +1,49 @@
+.tabs-handler {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #3a3943;
+  max-width: 100vw;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #3a3943;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.451);
+  overflow-x: auto;
+}
+
+
+
+.tab-title {
+  color: #DDD;
+  margin: 0 0;
+  padding: 5px 15px;
+  border-bottom: 1px solid transparent;
+  font-size: large;
+
+}
+@media only screen and (min-width: 768px){
+  .tab-title {
+    font-size: x-large;
+  }
+  .tabs {
+    padding: 0 15%;
+  }
+}
+
+.tab-title:hover {
+  border-bottom: 1px solid #F1AD37;
+  color: white;
+  cursor: pointer;
+}
+
+.active-tab {
+  border-bottom: 1px solid #DDD;
+  color: white;
+}

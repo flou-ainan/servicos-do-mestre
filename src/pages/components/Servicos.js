@@ -19,7 +19,6 @@ export default function Servicos(){
     />)
     return(
         <div className="services-viewport">
-        <h2 className="services-header center-title">Serviços</h2>
         <section className="services" id="servicos">
                 {servicesList}
         </section>

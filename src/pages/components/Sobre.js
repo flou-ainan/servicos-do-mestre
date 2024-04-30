@@ -4,7 +4,7 @@ export default function Sobre(){
     return(
         <section className="sobre" id="sobre">
             <div className="responsive-container">
-        <h2 className="center-title">Sobre</h2>
+        <h2 className="title">Sobre</h2>
           <div>
             <p>
               Olá, eu sou o <b>Flou Ainan!</b><br/>

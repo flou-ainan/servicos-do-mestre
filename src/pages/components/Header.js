@@ -136,7 +136,6 @@ function typeWrite(content, setContent, elementsIds){ //Recieve state object get
     let typeNow = (elementsIds) => {
        let elementId = elementsIds[i]
        let word = textsArray[i].split("")
-       console.log(getText(elementId))
        
        var loopTyping = () => {
         setBarState(elementId,"typing")

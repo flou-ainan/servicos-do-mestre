@@ -62,15 +62,18 @@ img {
   max-width: none;
 }
 
-.center-title {
-  font-family: "Quicksand";
+.text-center {
   text-align: center;
+}
+
+.title {
+  font-family: "Quicksand";
   font-weight: 600;
   font-size: 5.4vw;
 }
 
 @media only screen and (min-width: 650px){
-  .center-title{
+  .title{
     font-size: 27pt;
   }
 }

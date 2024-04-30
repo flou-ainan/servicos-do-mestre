@@ -14,7 +14,7 @@ nav {
     backdrop-filter: blur(20px);
   }
   
-  nav .title {
+  .nav-title {
     margin-right: auto;
     align-self: flex-start;
     display: flex;

@@ -4,7 +4,7 @@ import WAIcon from "./WAIcon"
 export default function Nav(props) {
     return (
         <nav >
-            <div className="title">
+            <div className="nav-title">
                 <Link href="/">
                 <Image 
                     src="/favicon.png" 
