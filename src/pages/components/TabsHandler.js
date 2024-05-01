@@ -1,19 +1,14 @@
-import { useState, useEffect} from "react";
-
+import { useState, useEffect, createElement} from "react";
+import easyURL from "@/libs/easyURL";
+import { eslint } from "../../../next.config";
 export default function TabsHandler({children, ...props}) {
   const [selected, setSelected] = useState(0);
   useEffect(() => {
-    let url = window.location.href.split("?")
-    let section
-    if (url[1]) for(let query of url){
-      if(query.split("=")[0] == "sec" && query.split("=")[1]){
-        section = query.split("=")[1].split("#")[0].split("&")[0]
-      }
-    }
-    console.log("Query: "+section)
-    if(section && children[0]){
+    let elementID = easyURL.getFrag()
+    console.log(elementID)
+    if(elementID != "" && children[0]){
       children.forEach((tab, index) => {
-        if(tab.props.id === section){
+        if(tab.props.id === elementID){
           setSelected(index)
           window.location.href = window.location.href.split("#")[0]+"#tabs"
         }
@@ -23,14 +18,8 @@ export default function TabsHandler({children, ...props}) {
 
   const switchTab = (index) => {
     setSelected(index)
-    //removes previous anchor tag and add tab focus
-    let url = window.location.href
-    url = url.split("#")[0]+"#tabs"
-
-    //change tab section
-    let section =  2
-
-    window.location.href = url
+    const tabID = children[index].props.id
+    window.location.href = window.location.href.split("#")[0]+`#${tabID}`
   }
 
   let activeComponent = null
@@ -54,6 +43,5 @@ export default function TabsHandler({children, ...props}) {
       {activeComponent}
     </section>
   ) || <p>_</p>
-  // let newChildren = <>bla</>
   return newChildren
 }

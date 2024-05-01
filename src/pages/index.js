@@ -5,24 +5,14 @@ import Servicos from './components/Servicos'
 import Portfolio from './components/Portfolio'
 import TabsHandler from './components/TabsHandler'
 import MyApps from './components/MyApps'
-import { useEffect } from 'react'
+import { Children, useEffect, useRef } from 'react'
 import Head from 'next/head'
 import BotaoFlutuante from './components/BotaoFlutuante'
 import WelcomeVideo from './components/WelcomeVideo'
 
+
 const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  // useEffect(() => {
-  //   fetch('https://raw.githubusercontent.com/flou-ainan/flou-open-studies/main/Docs/test/servicos.md')
-  //     .then(function (response) {
-  //       return response.text();
-  //     })
-  //     .then(function (text) {
-  //       //
-  //     });
-  // }, [])
-
+export default function Home(children) {
   return (
     <>
       <Head>
@@ -53,7 +43,7 @@ export default function Home() {
           <Portfolio title="Portfólio" id="portfolio"/>
           <MyApps title="Apps Gratuitos" id="freeapps"/>
         </TabsHandler >
-        <Sobre />
+        <Sobre/>
         <BotaoFlutuante />
       </main>
     </>

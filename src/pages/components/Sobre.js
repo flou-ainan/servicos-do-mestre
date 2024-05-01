@@ -1,6 +1,6 @@
 import WAIcon from "./WAIcon";
 
-export default function Sobre(){
+export default function Sobre(props){
     return(
         <section className="sobre" id="sobre">
             <div className="responsive-container">
