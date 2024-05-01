@@ -5,7 +5,6 @@ export default function TabsHandler({children, ...props}) {
   const [selected, setSelected] = useState(0);
   useEffect(() => {
     let elementID = easyURL.getFrag()
-    console.log(elementID)
     if(elementID != "" && children[0]){
       children.forEach((tab, index) => {
         if(tab.props.id === elementID){

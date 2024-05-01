@@ -84,7 +84,7 @@ function getClientData(separator, joiner){
 function getFrag(separator, isRetrieving){
   if(!separator) separator = '@'
   let part = isRetrieving ? 1 : 0
-  let url = window.location.href.split('#')[1]
-  url = url.split(separator)[part]
-  return url? url : ""
+  let frag = window.location.href.split('#')[1]
+  frag = frag?.split(separator)[part]
+  return frag? frag : ""
 }
