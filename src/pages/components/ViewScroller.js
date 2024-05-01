@@ -14,10 +14,10 @@ export default function ViewScroller({children, ...props}){
   // children.map((child,i)=>{
   //   if(child.props.children)
   // })
-  console.log(children.props.children[0].$$typeof)
+  // console.log(children.props.children[0].$$typeof)
 
   return(
-    createElement(children.type, {...children.props, id: 1, id:"ssss" })
+    <h1>ViewScroller to Be Implemented</h1>
 
   )
 }
