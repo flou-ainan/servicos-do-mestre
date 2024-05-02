@@ -1,7 +1,7 @@
 import { useState, useEffect, createElement} from "react";
 import easyURL from "@/libs/easyURL";
 import { eslint } from "../../../next.config";
-export default function TabsHandler({children, ...props}) {
+export default function TabsHandler({children, urlChangeCount}) {
   const [selected, setSelected] = useState(0);
   useEffect(() => {
     let elementID = easyURL.getFrag()
@@ -9,16 +9,27 @@ export default function TabsHandler({children, ...props}) {
       children.forEach((tab, index) => {
         if(tab.props.id === elementID){
           setSelected(index)
-          window.location.href = window.location.href.split("#")[0]+"#tabs"
+          //const tabID = children[index].props.id
+          console.log(urlChangeCount)
+          
+          if(urlChangeCount > 0) setTimeout(()=>{
+            document.querySelector(`#tabs`)?.scrollIntoView()
+          },100)
+          else setTimeout(()=>{
+            document.querySelector(`#tabs`)?.scrollIntoView()
+          },1800)
         }
       });
     }
-  }, [])
+  }, [urlChangeCount])
 
   const switchTab = (index) => {
     setSelected(index)
-    const tabID = children[index].props.id
-    window.location.href = window.location.href.split("#")[0]+`#${tabID}`
+    //const tabID = children[index].props.id
+    //window.location.href = window.location.href.split("#")[0]+`#${tabID}`
+    setTimeout(()=>{
+      document.querySelector(`#tabs`)?.scrollIntoView()
+    },100)
   }
 
   let activeComponent = null
