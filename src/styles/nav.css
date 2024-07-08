@@ -14,7 +14,13 @@ nav {
     backdrop-filter: blur(20px);
   }
   
-  nav .title {
+  /* .main-nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+  } */
+  .nav-title {
     margin-right: auto;
     align-self: flex-start;
     display: flex;

@@ -1,10 +1,10 @@
 import WAIcon from "./WAIcon";
 
-export default function Sobre(){
+export default function Sobre(props){
     return(
         <section className="sobre" id="sobre">
             <div className="responsive-container">
-        <h2 className="center-title">Sobre</h2>
+        <h2 className="title">Sobre</h2>
           <div>
             <p>
               Olá, eu sou o <b>Flou Ainan!</b><br/>
@@ -21,9 +21,9 @@ export default function Sobre(){
               com a <b className="d">melhor tecnologia</b> 
             </p>
           </div>
-          
+          <br/><br/>
          </div>
-         <br/>   <br/>
+ 
          <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta">FALE COMIGO <WAIcon/></a>
          <br/>   <br/>
         </section>

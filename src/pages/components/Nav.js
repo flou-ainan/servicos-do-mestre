@@ -3,8 +3,8 @@ import Image from "next/image"
 import WAIcon from "./WAIcon"
 export default function Nav(props) {
     return (
-        <nav >
-            <div className="title">
+        <nav className="main-nav">
+            <div className="nav-title">
                 <Link href="/">
                 <Image 
                     src="/favicon.png" 

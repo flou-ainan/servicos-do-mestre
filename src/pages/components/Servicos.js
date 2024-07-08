@@ -5,6 +5,7 @@
 import Image from "next/image"
 import servicos from "@/servicos.json"
 import WAIcon from "./WAIcon"
+import Modal from "./Modal"
 
 const services = servicos
 
@@ -19,7 +20,6 @@ export default function Servicos(){
     />)
     return(
         <div className="services-viewport">
-        <h2 className="services-header center-title">Serviços</h2>
         <section className="services" id="servicos">
                 {servicesList}
         </section>
@@ -44,7 +44,7 @@ export default function Servicos(){
             }}
         />
         <a href="https://wa.me/message/XUIBSFDFHNMKH1" className="typer-cta" style={{marginTop:"-80px"}}>FALE COMIGO <WAIcon/></a><br/><br/><br/>
-        
+        <Modal />
         </div>
     )
 }

@@ -5,6 +5,7 @@ import '@/styles/hero.css'
 import '@/styles/meu-app.css'
 import '@/styles/servicos.css'
 import '@/styles/sobre.css'
+import '@/styles/tabs.css'
 import Head from 'next/head'
 
 
