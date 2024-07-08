@@ -3,14 +3,14 @@
             "label": "Website",
             "imgName": "website-estatico.png",
             "description":"",
-            "price": "499,00"
+            "price": "399,00"
             
         },
         {
             "label": "Aplicativo Web",
             "imgName": "app-web.webp",
             "description":"",
-            "price": "748,00"
+            "price": "948,00"
             
         },
         {
@@ -24,28 +24,28 @@
             "label": "Artes Para Redes",
             "imgName": "instafeed.webp",
             "description":"",
-            "price": "25,00"
+            "price": "47,00"
             
         },
         {
             "label": "Artes Gráficas",
             "imgName": "arte-grafica.webp",
             "description":"",
-            "price": "89,00"
+            "price": "99,00"
             
         },
         {
             "label": "Logomarca",
             "imgName": "logomarca.webp",
             "description":"",
-            "price": "179,00"
+            "price": "189,00"
             
         },
         {
             "label": "Mini Website",
             "imgName": "flyer-quadrado.webp",
             "description": "",
-            "price": "199,00"
+            "price": "99,00"
             
         },
         {
@@ -59,7 +59,7 @@
             "label": "Edição de Vídeo",
             "imgName": "edicao-de-video.jpg",
             "description":"",
-            "price": "60,00"
+            "price": "80,00"
         },
         {
             "label": "QRCode Estilizado",
@@ -71,6 +71,6 @@
             "label": "Assistência Remota",
             "imgName": "avatar.webp",
             "description":"",
-            "price": "60,00"
+            "price": "60,00h"
         }
 ]
